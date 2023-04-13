@@ -18,9 +18,9 @@ const Character = ({character}) => {
             <div className="episodes">
                 <span className="title">Episodes:</span>
                 {
-                    character.episode.map(value => {
-                        <EpisodesList episode={value}/>
-                    })
+                    character.episode.map((value, index) => (
+                        <EpisodesList episode={value} key={index}/>
+                    ))
                 }
             </div>
             <div>URL - <a href={character.url}>{character.url}</a></div>
