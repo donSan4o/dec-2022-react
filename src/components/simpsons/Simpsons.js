@@ -2,8 +2,8 @@ function Simpsons({ data: simpsons }) {
     return (
         <div>
             {
-                simpsons.map(value => (
-                    <div>
+                simpsons.map((value, index) => (
+                    <div key={index}>
                         <div>Name - {value.name}</div>
                         <div>Surname - {value.surname}</div>
                         <div>Age - {value.age}</div>

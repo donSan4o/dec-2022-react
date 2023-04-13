@@ -396,7 +396,7 @@ let rickAndMorty = [
 function App() {
     return (
         <div>
-            <Simpsons data={simpsons} />
+            <Simpsons data={simpsons}/>
             <RickAndMorty data={rickAndMorty}/>
         </div>
     );
