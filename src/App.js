@@ -1,8 +1,14 @@
+import { useEffect } from 'react';
 import './App.css';
+import Cars from './components/cars/Cars';
 
-function App() {
+const App = () => {
+  useEffect(() => {
+
+  },[])
   return (
     <div>
+      <Cars/>
     </div>
   );
 }
